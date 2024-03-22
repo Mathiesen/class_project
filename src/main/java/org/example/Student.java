@@ -6,6 +6,15 @@ public class Student {
     private String Firstname;
     private String Lastname;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentid='" + studentid + '\'' +
+                ", Firstname='" + Firstname + '\'' +
+                ", Lastname='" + Lastname + '\'' +
+                '}';
+    }
+
     public String getStudentid() {
         return studentid;
     }
