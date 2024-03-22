@@ -3,7 +3,7 @@ package org.example;
 public class StudentManager {
 
 
-    public void updateStudentName(String oldName, String newName){
+    public void updateStudentName(String oldName, String newName) {
         //vi har fucking antaget er der en student klasse og en liste med students
         for (Student student : students) {
             if (student.getName().equals(oldName)) {
@@ -13,7 +13,7 @@ public class StudentManager {
         }
     }
 
-    public void updateStudentAge(String name, int newAge){
+    public void updateStudentAge(String name, int newAge) {
         //vi har fucking antaget er der en student klasse og en liste med students
         for (Student student : students) {
             if (student.getAge().equals(oldAge)) {
@@ -22,8 +22,8 @@ public class StudentManager {
             }
         }
     }
-    public void updateStudentGender(String name, int newGender)
-    {
+
+    public void updateStudentGender(String name, int newGender) {
         //vi har fucking antaget er der en student klasse og en liste med students
         for (Student student : students) {
             if (student.getGender().equals(oldGender)) {
@@ -31,3 +31,5 @@ public class StudentManager {
                 break;
             }
         }
+    }
+}
