@@ -22,4 +22,12 @@ public class StudentManager {
             }
         }
     }
-}
+    public void updateStudentGender(String name, int newGender)
+    {
+        //vi har fucking antaget er der en student klasse og en liste med students
+        for (Student student : students) {
+            if (student.getGender().equals(oldGender)) {
+                student.updateGender(newGender);
+                break;
+            }
+        }
